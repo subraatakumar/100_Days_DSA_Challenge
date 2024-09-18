@@ -1,3 +1,5 @@
+## TypeScript Solution
+
 ```ts
 function reverseStringBruteForce(input: string): string {
     let reversed = "";
@@ -30,6 +32,8 @@ console.log(reverseOptimal("hello")); // Output: "olleh"
 console.log(reverseOptimal("hello world")); //Output: "dlrow olleh"
 console.log(reverseOptimal("")); //output: ""
 ```
+
+## Go Solution
 
 ```go
 // Online Go compiler to run Golang program online
