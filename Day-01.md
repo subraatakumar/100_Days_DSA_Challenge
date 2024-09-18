@@ -14,7 +14,25 @@ In the brute force approach, we'll build a new string by appending characters fr
 #### Space Complexity:
 - We are storing the reversed string in a new variable, so the space complexity is O(n), where n is the length of the input string.
 
+## 2. Optimal Approach (Two-Pointer Method)
 
+In the optimal approach, we use the two-pointer technique. We'll swap the characters in place, avoiding extra space for a new string.
+
+### Explanation:
+- First, we convert the string into an array of characters, since strings are immutable.
+- We set two pointers: one at the beginning (left) and one at the end (right).
+- We swap the characters at these two positions, then move the pointers closer to each other until they meet in the middle.
+- Finally, we join the array back into a string and return the result.
+
+#### Time Complexity:
+- We perform the swap operation n/2 times (where n is the length of the string), so the time complexity is O(n).
+
+#### Space Complexity:
+- The extra space used is for converting the string into an array of characters and then back to a string, so the space complexity is O(n).
+
+## Comparison of Approaches:
+- Brute Force: Has time complexity O(n^2) because of repeated string concatenations.
+- Optimal (Two-Pointer): Has time complexity O(n) since we swap characters in place without extra concatenation steps.
 
 ## TypeScript Solution
 
